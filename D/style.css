@@ -1,0 +1,54 @@
+* {
+    font-family: sans-serif;
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: repeat(10, 60px);
+      margin: 40px;
+      border: 2px solid black;
+      width: fit-content;
+      border-radius: 2px;
+      margin: auto;
+    }
+    .square {
+      width: 60px;
+      height: 60px;
+      background-color: #94f496;
+      transition: background-color 0.2s;
+    }
+    .square:hover {
+      background-color: #c0fec1; /* Lighter on hover */
+    }
+
+    .sidebar {
+        height: 600px;
+        width: 300px;
+        margin: 40px;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    #follower {
+      position: absolute;
+      pointer-events: none;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-family: sans-serif;
+      opacity: 0;
+      margin: auto
+    }
+
+    #scavenge {
+      display: block;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: auto
+    }
