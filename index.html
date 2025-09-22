@@ -11,10 +11,15 @@
     <div style="text-align: center; display: flex; margin: auto; overflow: hidden;">
 <div class="sidebar">
     <h3>Inventory</h3>
-    <img src="https://grabezany.github.io/Civilization-Simulator/Assets/2025_09_14_0s8_Kleki.png" style="width: 40px; height: 40px;" id="wood"><br>
-    <img src="https://grabezany.github.io/Civilization-Simulator/Assets/2025_09_14_0sp_Kleki.png" style="width: 40px; height: 40px;" id="stone">
+    <img src="C:/Users/Grabe/Desktop/D/Assets/Wood.png" style="width: 40px; height: 40px;" id="wood"><br>
+    <img src="C:/Users/Grabe/Desktop/D/Assets/Stone.png" style="width: 40px; height: 40px;" id="stone"><br>
+    <img src="C:/Users/Grabe/Desktop/D/Assets/Food.png" style="width: 40px; height: 40px;" id="food"><br>
+    <img src="C:/Users/Grabe/Desktop/D/Assets/Fluxium.png" style="width: 40px; height: 40px;" id="fluxium"><br>
     <h3>Crafting</h3>
-    <img src="https://grabezany.github.io/Civilization-Simulator/Assets/2025_09_14_0ti_Kleki.png" style="width: 40px; height: 40px;" id="house">
+    <img src="C:/Users/Grabe/Desktop/D/Assets/House.png" style="width: 40px; height: 40px;" id="house"><br>
+    <img src="C:/Users/Grabe/Desktop/D/Assets/Factory.png" style="width: 40px; height: 40px;" id="factory"><br>
+    <img src="C:/Users/Grabe/Desktop/D/Assets/ScavengerHut.png" style="width: 40px; height: 40px;" id="hut"><br>
+    <img src="C:/Users/Grabe/Desktop/D/Assets/Pump.gif" style="width: 40px; height: 40px;" id="pump"><br>
 </div>
 
 
@@ -123,10 +128,15 @@
 
   <div class="sidebar">
     <h3>Statistics</h3>
+    <p id="stats"></p>
+    <h3>Enemy Guidebook</h3>
+    <textarea id="log" style="resize: none; min-width: 250px; min-height: 350px; max-width: 250px; max-height: 350px" readonly="true">Coming Soon...</textarea>
   </div>
 </div>
 <div style="margin: auto; text-align: center">
-  <button id="scavenge">Scavenge</button>
+  <button id="scavenge" onclick="Scavenge()">Scavenge</button>
+  <br>
+  <button id="save" onclick="saveData()">Save Game</button>
 </div>
 
   <script src="script.js"></script>
@@ -134,5 +144,4 @@
 </body>
 
 </html>
-
 
