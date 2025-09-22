@@ -3,19 +3,22 @@
 }
 
 .grid {
-      display: grid;
-      grid-template-columns: repeat(10, 60px);
-      margin: 40px;
-      border: 2px solid black;
-      width: fit-content;
-      border-radius: 2px;
-      margin: auto;
-    }
+  position: relative; /* Needed for absolute children */
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  margin: 40px auto;
+  border: 2px solid black;
+  width: fit-content;
+  border-radius: 2px;
+}
     .square {
       width: 60px;
       height: 60px;
       background-color: #94f496;
       transition: background-color 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .square:hover {
       background-color: #c0fec1; /* Lighter on hover */
@@ -38,7 +41,8 @@
       border-radius: 5px;
       font-family: sans-serif;
       opacity: 0;
-      margin: auto
+      margin: auto;
+      z-index: 1000000;
     }
 
     #scavenge {
@@ -52,3 +56,18 @@
       cursor: pointer;
       margin: auto
     }
+
+    .enemy {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('C:/Users/Grabe/Desktop/D/Assets/New Piskel (2).png');
+  background-size: cover;
+  z-index: 10;
+  transition: top 0.3s ease, left 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+
+
