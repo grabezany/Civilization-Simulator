@@ -74,7 +74,7 @@ for (var key in gridRefs) {
 
       if (userData.holding && userData.itemholding === "house") {
         var img = document.createElement("img");
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/House.png";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/House.png";
         img.width = 40;
         img.height = 40;
         this.appendChild(img);
@@ -91,7 +91,7 @@ for (var key in gridRefs) {
         stats.innerHTML = "Civilians: " + userData.civilians + "<br><br><b>Jobs</b><br>Scavengers: " + userData.jobslots.scavenger + "<br>Farmers: " + userData.jobslots.farmer;
       } else if(userData.holding && userData.itemholding === "factory") {
         var img = document.createElement("img");
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/Factory.png";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/Factory.png";
         img.width = 40;
         img.height = 40;
         this.appendChild(img);
@@ -106,7 +106,7 @@ for (var key in gridRefs) {
         pump.style.pointerEvents = "auto";
       } else if(userData.holding && userData.itemholding === "hut") {
         var img = document.createElement("img");
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/ScavengerHut.png";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/ScavengerHut.png";
         img.width = 40;
         img.height = 40;
         this.appendChild(img);
@@ -121,7 +121,7 @@ for (var key in gridRefs) {
         pump.style.pointerEvents = "auto";
       } else if(userData.holding && userData.itemholding === "pump") {
         var img = document.createElement("img");
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/Pump.gif";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/Pump.gif";
         img.width = 40;
         img.height = 40;
         this.appendChild(img);
@@ -273,7 +273,7 @@ hut.addEventListener("click", function() {
         userData.civilians -= 2;
         userData.holding = true;
         follower.style.opacity = 1;
-        follower.innerHTML = "<img src='https://grabezany.github.com/Civilization-Simulator/Assets/ScavengerHut.png' style='width: 40px; height: 40px; z-index: 1000;'>";
+        follower.innerHTML = "<img src='https://grabezany.github.io/Civilization-Simulator/Assets/ScavengerHut.png' style='width: 40px; height: 40px; z-index: 1000;'>";
         userData.itemholding = "hut";
         house.style.pointerEvents = "none";
         factory.style.pointerEvents = "none";
@@ -292,7 +292,7 @@ pump.addEventListener("click", function() {
         userData.materials.stone -= 1;
         userData.holding = true;
         follower.style.opacity = 1;
-        follower.innerHTML = "<img src='https://grabezany.github.com/Civilization-Simulator/Assets/Pump.gif' style='width: 40px; height: 40px; z-index: 1000;'>";
+        follower.innerHTML = "<img src='https://grabezany.github.io/Civilization-Simulator/Assets/Pump.gif' style='width: 40px; height: 40px; z-index: 1000;'>";
         userData.itemholding = "pump";
         house.style.pointerEvents = "none";
         factory.style.pointerEvents = "none";
@@ -311,7 +311,7 @@ factory.addEventListener("click", function() {
         userData.civilians -= 1;
         userData.holding = true;
         follower.style.opacity = 1;
-        follower.innerHTML = "<img src='https://grabezany.github.com/Civilization-Simulator/Assets/Factory.png' style='width: 40px; height: 40px;'>";
+        follower.innerHTML = "<img src='https://grabezany.github.io/Civilization-Simulator/Assets/Factory.png' style='width: 40px; height: 40px;'>";
         userData.itemholding = "factory";
         house.style.pointerEvents = "none";
         factory.style.pointerEvents = "none";
@@ -331,7 +331,7 @@ house.addEventListener("click", function() {
         userData.materials.food -= 3;
         userData.holding = true;
         follower.style.opacity = 1;
-        follower.innerHTML = "<img src='https://grabezany.github.com/Civilization-Simulator/Assets/House.png' style='width: 40px; height: 40px;'>";
+        follower.innerHTML = "<img src='https://grabezany.github.io/Civilization-Simulator/Assets/House.png' style='width: 40px; height: 40px;'>";
         userData.itemholding = "house";
         house.style.pointerEvents = "none";
         hut.style.pointerEvents = "none";
@@ -624,16 +624,16 @@ function loadData() {
     img.height = 40;
     switch (type) {
       case "house":
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/House.png";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/House.png";
         break;
       case "factory":
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/Factory.png";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/Factory.png";
         break;
       case "hut":
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/ScavengerHut.png";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/ScavengerHut.png";
         break;
       case "fluxiumpump":
-        img.src = "https://grabezany.github.com/Civilization-Simulator/Assets/Pump.gif";
+        img.src = "https://grabezany.github.io/Civilization-Simulator/Assets/Pump.gif";
         break;
     }
     tile.appendChild(img);
@@ -643,5 +643,6 @@ function loadData() {
   updateStats
   alert("Game loaded from local storage.");
 }
+
 
 
